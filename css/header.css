@@ -1,0 +1,163 @@
+@charset 'utf-8';
+
+body.bgon{
+    background: #ccc;
+}
+.on{
+    transform: rotate(180deg);
+}
+
+/* Header */
+#header{
+    position: fixed;
+    top: 40px;
+    left: 40px;
+    z-index: 999;
+}
+#header h2{
+    width: 130px;
+    position: fixed;
+}
+#header h2 img{
+    width: 125px;
+}
+#header .gnb{
+    width: 130px;
+    font-family: 'Raleway', sans-serif;
+    position: relative;
+    top: 70px;
+}
+#header .gnb li{
+    _line-height: 35px;
+    font-size: 24px; 
+    letter-spacing: 1px;
+}
+#header .gnb li a{
+    color: black;
+    display: block;
+}
+.sub li a{
+    font-size: 16px;
+    line-height: 20px;
+}
+.sub{
+    padding-left: 25px;
+    display: none;
+}
+
+#header .sns{
+    text-align: center;
+    width: 30px;
+    position: fixed;
+    top: 400px;
+    right: 40px;
+}
+#header .sns>hr{
+    border-top: 1px solid gray;;
+    margin: 0 auto;
+}
+#header .sns li:nth-child(1), #header .sns li:nth-child(3), #header .sns li:nth-child(4), #header .sns li:nth-child(5){
+    margin-bottom: 10px;
+}
+#header .sns li:nth-child(3){
+    margin-top: 10px;
+}
+#header .sns li:nth-child(7){
+    margin-top: 30px;
+    border-radius: 50%;
+    background: black; 
+    padding-bottom: 5px;
+}
+#header .sns li:nth-child(7) a{
+    color: white;
+}
+#header .sns li a{
+    font-size: 24px;
+}
+
+.ham{
+    position: fixed;
+    top: 40px;
+    right: 15px;
+    z-index: 999;
+    display: none;
+}
+.ham>a{
+    display: block;
+}
+.ham img{
+    width: 30px;
+    height: 26px;
+}
+
+
+/* 메뉴버튼 클릭시 Header */
+#gnbon{
+    position: fixed;
+    z-index: 999;
+    top: 120px;
+    left: 40px;
+    display: none;
+    font-size: 28px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+#gnbon>li{
+    height: 120px;
+}
+#gnbon>li>a:hover{
+    text-decoration: underline;
+}
+#gnbon>li>a{
+    color: black;
+    display: block;
+    overflow: hidden;
+}
+.down2on{
+    text-decoration: underline;
+}
+#gnbon>li>a>span>i{
+    color: black;
+    font-size: 24px;
+}
+.subon{
+    display: none;
+    font-size: 14px;
+}
+#gnbon>li>.on{
+    display: block;
+}
+.subon>li{
+    height: 25px;
+}
+.subon>li>a{
+    display: block;
+}
+.subon>li>a:hover{
+    text-decoration: underline;
+}
+
+
+
+@media screen and (max-width:767px){
+    /* Header */
+    #header .gnb{
+        display: none;
+    }
+
+    #header .sns{
+        text-align: center;
+        width: 20px;
+        position: fixed;
+        top: 750px;
+        right: 20px;
+    }
+    #header .sns li a{
+        font-size: 18px;
+    }
+
+    .ham{
+        display: block;
+    }
+}
+
